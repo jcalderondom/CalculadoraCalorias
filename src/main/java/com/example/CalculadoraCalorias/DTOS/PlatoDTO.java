@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Data
@@ -13,15 +14,9 @@ import java.util.List;
 @AllArgsConstructor
 public class PlatoDTO {
     private String name;
-    private List<Ingrediente> ingredientes;
-    private int caloriasTotales;
-    private Ingrediente mostCaloriesIngredients;
-    public PlatoDTO(Plato plato, int caloriasTotales, Ingrediente mostCaloriesIngredients){
-        this.name = plato.getName();
-        this.ingredientes= plato.getIngredientes();
-        this.caloriasTotales = caloriasTotales;
-        this.mostCaloriesIngredients = mostCaloriesIngredients;
+    private HashMap<String,String> ingredientesPlato;
+    private Double caloriasTotales;
+    private String mostCaloriesIngredients;
 
-    }
 }
 

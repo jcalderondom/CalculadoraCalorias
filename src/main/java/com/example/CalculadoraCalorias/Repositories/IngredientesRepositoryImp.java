@@ -15,7 +15,8 @@ import java.util.List;
 @Repository
 public class IngredientesRepositoryImp implements IIngredientesRepository {
     public IngredientesRepositoryImp(){
-        readIngredientes("classpath:food.json");
+
+        readIngredientes("src/main/resources/food.json");
     }
     List<Ingrediente> ingredientes = new ArrayList<>();
     @Override

@@ -11,5 +11,5 @@ import java.util.List;
 @NoArgsConstructor
 public class Plato {
     private String name;
-    private List<Ingrediente> ingredientes;
+    private List<Ingrediente> ingredientesPlato;
 }
